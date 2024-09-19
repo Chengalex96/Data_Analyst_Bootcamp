@@ -245,7 +245,7 @@
       <column caption='JP Sales' datatype='real' name='[JP_Sales]' role='measure' type='quantitative' />
       <column caption='NA Sales' datatype='real' name='[NA_Sales]' role='measure' type='quantitative' />
       <column caption='Other Sales' datatype='real' name='[Other_Sales]' role='measure' type='quantitative' />
-      <column caption='Year (bin)' datatype='integer' name='[Year (bin)]' role='dimension' type='ordinal'>
+      <column aggregation='None' caption='Year (bin)' datatype='integer' name='[Year (bin)]' role='dimension' type='ordinal'>
         <calculation class='bin' decimals='0' formula='[Year]' peg='0' size='5' />
       </column>
       <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
@@ -526,7 +526,7 @@
             <column datatype='string' name='[Genre]' role='dimension' type='nominal' />
             <column caption='Global Sales' datatype='real' name='[Global_Sales]' role='measure' type='quantitative' />
             <column datatype='string' name='[Platform]' role='dimension' type='nominal' />
-            <column caption='Year (bin)' datatype='integer' name='[Year (bin)]' role='dimension' type='ordinal'>
+            <column aggregation='None' caption='Year (bin)' datatype='integer' name='[Year (bin)]' role='dimension' type='ordinal'>
               <calculation class='bin' decimals='0' formula='[Year]' peg='0' size='5' />
             </column>
             <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
@@ -757,8 +757,8 @@
         <devicelayout auto-generated='true' name='Phone'>
           <size maxheight='750' minheight='750' sizing-mode='vscroll' />
           <zones>
-            <zone h='100000' id='20' type-v2='layout-basic' w='100000' x='0' y='0'>
-              <zone h='98148' id='19' param='vert' type-v2='layout-flow' w='99064' x='468' y='926'>
+            <zone h='100000' id='22' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='21' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
                 <zone h='67361' id='8' mode='checkdropdown' name='Sheet 1' param='[federated.1r4vkdw075ot791bzphjs0adq55j].[none:Platform:nk]' type-v2='filter' w='9362' x='90170' y='926'>
                   <zone-style>
                     <format attr='border-color' value='#000000' />
